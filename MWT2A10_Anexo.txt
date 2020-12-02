@@ -1,0 +1,76 @@
+Anexo MWT2A10
+
+Servidor a la Express
+
+Ingredientes:
+✔ Sitio web al gusto
+✔ Archivo index.js
+✔ node.js
+✔ npm
+✔ express.js
+
+Instrucciones:
+1. Elige el lugar donde deseas poner tu proyecto. Te recomendamos crearle
+su propia carpeta en un lugar fácil de recordar.
+
+2. Con ayuda de tu terminal instala _node.js_1 . Un dato curioso de este ingrediente
+como recordarás es que nos ayuda a correr JavaScript fuera de un navegador.
+(Si quieres saber más sobre JavaScript visita el apartado en la parte inferior de
+la página).
+
+3. Verifica que la instalación haya sido exitosa y de ser así, ahora es momento de
+auxiliarnos de _npm_2 para hacer la instalación de _express.js_3 . Una forma usual
+de realizar la instalación es a través de:
+_npm_4 install _express_5 –save
+De ser necesario ejecutar lo anterior como superusuario y espera hasta que
+llegué a su punto de cocción.
+
+4. Una vez que ya tenemos _express.js_6 listo. Procedemos a incorporar nuestro
+_archivo index.js_7 , a la carpeta del proyecto, este archivo contiene las directivas
+para levantar nuestro servidor. El cual luce de la siguiente manera:
+
+5. ¡Ya casi tenemos todo listo! solo falta agregar el sitio web al gusto, el primer
+paso para esto es crear la carpeta que albergará estos archivos dentro de
+nuestro proyecto. Ya que se trata de archivos que una vez que son lanzados no
+cambian (HTML y css), es decir son _estáticos_8 , pero que además serán visibles
+para todos los usuarios llamaremos a nuestra carpeta public. (Un buen chef
+realiza el paso anterior y las posteriores creaciones de archivos y carpetas a
+través de la terminal)
+
+6. Si quieres ser más ordenado y crees estar listo para dar un paso más para
+perfeccionar tus habilidades en proyectos web, separa los archivos de cada tipo
+en carpetas diferentes: una carpeta para imágenes llamada img, una carpeta
+para los archivos que sirven como estructura llamada _html_9 y otra para los
+estilos llamada _css_10 . (Si existieran archivos de otro tipo, por ejemplo,
+JavaScript, tendrían su propia carpeta y hay algunas convenciones en cuanto a
+nombre, en este caso el nombre de la carpeta usualmente es js).
+Nota: Si decides realizar este paso es posible que debas hacer algunas
+modificaciones en cuanto a rutas dentro de tus archivos HTML. Es importante
+familiarizarse con lo anterior ya que a medida que los proyectos crezcan tendrás
+más archivos y te será más fácil ubicarlos si se encuentran en carpetas
+separadas.
+
+7. Estamos a unos pocos pasos de terminar, ya sólo debemos indicar que la
+carpeta que tiene nuestros archivos estáticos es public. Esto se realiza dentro de
+nuestro archivo index.js. A través de la siguiente línea:
+app.use(express.static('public'));
+Agrega la línea y guarda los cambios.
+
+8. Ahora es momento de probar nuestra creación y verificar que tenga buen sabor.
+Corre el archivo _index.html_11 en tu terminal a través del comando: _node index.js_12. 
+La primera parte corresponde a lo que lo va a ejecutar (nuestro entorno de ejecución) y 
+la segunda al archivo con terminación .js que tiene las pautas para levantar el servidor.
+
+9. La terminal debe desplegar un mensaje donde indica que tu aplicación está
+corriendo en el puerto número _3000_13 , como lo indicamos en index.js. Ve al
+_localhost_ 14 , que hace referencia a tu mismo ordenador en la dirección
+127.0.0.1 de tu navegador ¡No olvides incluir el puerto! y visualiza tu sitio web
+desplegado
+
+10.Si llegaste hasta este paso es hora de que disfrutes y presumas tu creación con
+tu familia, amistades o con quien tú quieras. Con el pequeño detalle de que se
+encuentre observando la misma computadora que tú.
+
+11.¡El siguiente paso es conquistar el mundo! lo cual es posible a través de una
+plataforma de hosting que permita que todos en cualquier lugar vean tu sitio
+web.
