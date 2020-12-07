@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css" >
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            Encuesta
+        </a>
+    </nav> 
+
+    <div class="container">
+        <form action="/" method="get">
+            <h3>Actividades en el hogar</h3>
+            <h5>Cuantas actividades realizan en casa hombres y mujeres:</h5>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="card col-md-12" >
+                                <h4>Hombres</h4>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="card col-md-12">
+                                <h4>Mujeres</h4>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <% dataMan.forEach(function(count){ %>
+                                <li><%= count %></li>
+                            <% });%>
+                        </td>
+
+                        <td>
+                            <% dataWoman.forEach(function(count){ %>
+                                <li><%= count %></li>
+                            <% });%>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="card col-md-12">
+                <input id="back" type="submit" class="btn btn-primary" value="Back"></button>
+            </div> 
+
+        </form>
+    </div>
+</body>
+</html>
